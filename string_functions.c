@@ -13,18 +13,26 @@ unsigned int _strlen(char *s)
 
 	return (len);
 }
+
 /**
-* print_env - Prints the current enviroment variable.
+* print_env - Prints the current environment variables.
 **/
 void print_env(void)
 {
-	char **env = environ;
+    extern char **environ; 
+    char **env = environ;
 
-	while (*env)
-	{		
-		printf("%s\n", *env++);
-	}
+    while (*env)
+    {		
+        printf("%s\n", *env++);
+    }
 }
+
+int main() {
+    print_env();
+    return 0;
+}
+
 /**
 * _strcmp - Function compares two strings
 * @s1: first string
