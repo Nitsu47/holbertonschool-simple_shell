@@ -16,7 +16,7 @@ char *command = NULL;
         read = getline(&command, &len, stdin);
         if (read == -1)
         {
-            if (eof(stdin))
+            if (_EOF(stdin))
                 break;
             perror("Error");
             break;
