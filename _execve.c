@@ -2,7 +2,6 @@
 /**
 * _execve - executes commands passed.
 */
-}
 int exec(char **args)
 {
 	pid_t pid;
