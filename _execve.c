@@ -24,11 +24,9 @@ else if (pid < 0)
 }
 else
 {
-	do
-	{
-		waitpid(pid, &status, WUNTRACED);
-	}
-	while (!WIFEXITED(status));
+do
+	waitpid(pid, &status, WUNTRACED);
+while (!WIFEXITED(status));
 }
-	return (1);
+return (1);
 }
