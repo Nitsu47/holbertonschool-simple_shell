@@ -17,7 +17,7 @@ while (1)
 }
 token = strtok(buffer, "");
 
-if(token == NULL)
+if (token == NULL)
 {
 	return (-1);
 }
@@ -39,7 +39,7 @@ char **tokenize(char *buffer, const char *x)
 char *token = NULL, **commands = NULL;
 size_t bufsize = 0;
 int i = 0;
-	
+
 if (buffer == NULL)
 	return (NULL);
 
@@ -52,7 +52,6 @@ if (commands == NULL)
 	free(commands);
 	exit(EXIT_FAILURE);
 }
-	
 token = strtok(buffer, x);
 while (token != NULL)
 {
