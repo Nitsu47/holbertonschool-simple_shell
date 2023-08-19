@@ -1,32 +1,33 @@
 #include "shell.h"
 /**
 * main - Shell core
-* Return: 
+* Return:
 */
 int exec(char **args)
 {
 char *command = NULL;
-    size_t len = 1024;
-    ssize_t read;
+size_t len = 1024;
+ssize_t read;
 
-    while (1)
+while (1)
+{
+    printf("$ ");
+    fflush(stdout);
+    read = getline(&command, &len, stdin);
+if (read == -1)
+{
+    if (_EOF(stdin))
     {
-        printf("$ ");
-        fflush(stdout);
-        read = getline(&command, &len, stdin);
-        if (read == -1)
-        {
-            if (_EOF(stdin))
-                break;
-            perror("Error");
-            break;
-        }
+        break;
+        perror("Error");
+        break;
     }
-        if (command[read - 1] == '\n')
-            command[read - 1] = '\0';
+}
+if (command[read - 1] == '\n')
+    command[read - 1] = '\0';
 
-        printf("%s\n", command);
+printf("%s\n", command);
 
-    free(command);
-    return 0;
+free(command);
+return 0;
 }
