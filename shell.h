@@ -12,10 +12,10 @@
 /**
 * prototypes
 */
-int exec(char **args);
+int exec(void);
 int _strtok(void);
 char **tokenize(char *buffer, const char *x);
-void _EOF(char **buffer);
+void _EOF(char *buffer);
 int fork2(void);
 char **_getPATH(char **env);
 int getppid(void);
