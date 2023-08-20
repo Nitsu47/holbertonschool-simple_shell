@@ -20,7 +20,6 @@
 * [Introduction](#introduction)
 * [Tasks](#tasks)
 * [Requirements](#requirements)
-* [Resources](#resources)
 * [Files](#files)
 * [Usage](#usage)
 * [Authors](#authors)
@@ -89,7 +88,6 @@ Simple shell 0.4 +
 
 <details>
 <summary><h2>Resources</h2></summary>>
-## Resources
 
 * <a href="https://intranet.hbtn.io/concepts/881" target="blank">Approaching a Project</a>
 * <a href="https://intranet.hbtn.io/concepts/900" target="blank">Everything you need to know to start coding your own shell</a>
