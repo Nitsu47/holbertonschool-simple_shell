@@ -1,5 +1,7 @@
 <div align="center">
 
+![Simple shell](https://github.com/Nitsu47/holbertonschool-simple_shell/assets/135637506/c2887a0c-31a4-4519-8271-07f8ec3356f4)
+
 <h1> Simple Shell </h1>
 
 > This repository contains the C - Simple Shell project for Holberton School Uruguay.
@@ -16,7 +18,6 @@
 
 ## Table of contents
 * [Introduction](#introduction)
-* [Return](#return)
 * [Tasks](#tasks)
 * [Requirements](#requirements)
 * [Resources](#resources)
@@ -26,8 +27,6 @@
 
 ## Introduction
 The project its about construct our own Simple Shell to learn a get deeper into C lenguage. This objective is given us by Holberton School as our second pair programming and most important project of the first trimester.
-
-## Return
 
 <details>
 <summary><h2>Tasks</h2></summary>
@@ -88,6 +87,8 @@ Simple shell 0.4 +
 * Implement the env built-in, that prints the current environment
 </details>
 
+<details>
+<summary><h2>Resources</h2></summary>>
 ## Resources
 
 * <a href="https://intranet.hbtn.io/concepts/881" target="blank">Approaching a Project</a>
@@ -95,9 +96,9 @@ Simple shell 0.4 +
 * <a href="https://en.wikipedia.org/wiki/Unix_shell" target="blank">Unix Shell</a>
 * <a href="https://en.wikipedia.org/wiki/Thompson_shell" target="blank">Thompson Shell</a>
 * <a href="https://en.wikipedia.org/wiki/Ken_Thompson" target="blank">Ken Thompson</a>
+</details>
 
-<details>
-<summary><h2>Requirements</h2></summary>
+<details><summary><h2>Requirements</h2></summary>
 <h3>General Requirements</h3>
         
 * Allowed editors: vi, vim, emacs
@@ -116,12 +117,17 @@ Simple shell 0.4 +
 * gcc -Wall -Werror -Wextra -pedantic -std=gnu89 test/main.c *.c -o hsh
 </details>
 
+<details>
+<summary><h2>Files</h2></summary>
+        
 ## Files
-1. [shell.c](#shell.c)
-2. [shell.h](#shell.h)
-3. [_execve.c](#_execve.c)
-4. [string_functions.c](#string_functions.c)
-5. [auxiliar_functions.c](#auxiliar_functions.c)
+|Files|
+|---|
+|[shell.c](#shell.c)|
+|[shell.h](#shell.h)|
+|[_execve.c](#_execve.c)|
+|[string_functions.c](#string_functions.c)|
+|[auxiliar_functions.c](#auxiliar_functions.c)|
 
 <a name="shell.c"></a>
 <h3><a href="https://github.com/Nitsu47/holbertonschool-simple_shell/blob/main/shell.c">shell.c</a></h3>
@@ -138,23 +144,36 @@ This file contains our own versions of some necessary functions, "_strlen"(retur
 <a name="auxiliar_functions.c"></a>
 <h3><a href="https://github.com/Nitsu47/holbertonschool-simple_shell/blob/master/auxiliar_functions.c">auxiliar_functions.c</a></h3>
 Contains 3 needed functions, "tokenize"(that splits a string), "eof"(checks if buffer is end od the line) and "strtok"(divide an array in tokens(arguments)).
+</details>
 
-<details><summary><h2>Usage</h2></summary>
+<details>
+<summary><h2>Usage</h2></summary>
 <details><summary><h3>Flowchart</h3></summary>
- ![Shell flow drawio](https://github.com/Nitsu47/holbertonschool-simple_shell-test/assets/135637506/448e3510-25ad-4a6c-b1ba-78e0e7e7ef7e)
+![Shell flow drawio](https://github.com/Nitsu47/holbertonschool-simple_shell-test/assets/135637506/448e3510-25ad-4a6c-b1ba-78e0e7e7ef7e)
 </details>
 <h3></h3>
- 
+        
+Installation
+
+- Clone this repository in your terminal: `git clone "https://github.com/Nitsu47/holbertonschool-simple_shell"`
+- Go into the repository: `cd holbertonschool-simple_shell`
+- Compile: `gcc -Wall -Werror -Wextra -pedantic *.c -o hsh`
 
 <h3>Example</h3>
 
-
-```c
-
+Input:
 ```
-
-```c
-
+$ ls -l
+```
+Output:
+```
+-rw-r--r-- 1 root root  145 Aug 19 21:33 AUTHORS.txt
+-rw-r--r-- 1 root root 6849 Aug 19 22:19 README.md
+-rw-r--r-- 1 root root  501 Aug 20 02:05 _execve.c
+-rw-r--r-- 1 root root 1641 Aug 19 22:07 auxiliar_functions.c
+-rw-r--r-- 1 root root  553 Aug 19 22:14 shell.c
+-rw-r--r-- 1 root root  576 Aug 19 22:15 shell.h
+-rw-r--r-- 1 root root 1027 Aug 19 21:38 string_functions.c
 ```
 
 </details>
