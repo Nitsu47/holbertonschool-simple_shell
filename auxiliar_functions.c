@@ -74,7 +74,7 @@ while (token != NULL)
 * @buffer: The pointer to the input string.
 * Return: Nothing
 **/
-void _EOF(char *buffer)
+void eof(char *buffer)
 {
 if (*buffer)
 {
