@@ -70,11 +70,11 @@ while (token != NULL)
 	return (commands);
 }
 /**
-* _EOF -  function checks if buffer is EOF
+* eof -  function checks if buffer is EOF
 * @buffer: The pointer to the input string.
 * Return: Nothing
 **/
-void eof(char *buffer)
+void _EOF(char *buffer)
 {
 if (*buffer)
 {
