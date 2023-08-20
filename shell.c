@@ -3,7 +3,7 @@
 * main - Shell core
 * Return:
 */
-int exec(char **args)
+int exec(void)
 {
 char *command = NULL;
 size_t len = 1024;
@@ -30,4 +30,5 @@ printf("%s\n", command);
 
 free(command);
 return (0);
+}
 }
