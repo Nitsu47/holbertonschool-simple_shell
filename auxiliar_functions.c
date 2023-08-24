@@ -74,12 +74,12 @@ while (token != NULL)
 * @buffer: The pointer to the input string.
 * Return: Nothing
 **/
-void _EOF(char *buffer)
+void _EOF(char **buffer)
 {
 if (*buffer)
 {
 	free(*buffer);
-	*buffer = NULL;
+	*buffer = (char *)NULL;
 }
 if (isatty(STDIN_FILENO))
 {
