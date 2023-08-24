@@ -21,14 +21,14 @@ extern char **environ;
 char **env = environ;
 
 while (*env)
-{		
+{
 	printf("%s\n", *env++);
 }
 }
-int main()
+int main(void)
 {
 	print_env();
-	return 0;
+	return (0);
 }
 /**
 * _strcmp - Function compares two strings
