@@ -12,7 +12,7 @@
 /**
 * prototypes
 */
-int execve_(char *command, char **args);
+int _execve(char **args);
 int _strtok(void);
 char **tokenize(char *buffer, const char *x);
 void _EOF(char **buffer);
