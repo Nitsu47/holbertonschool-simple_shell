@@ -18,6 +18,7 @@ char **tokenize(char *buffer, const char *x);
 void _EOF(char **buffer);
 int fork2(void);
 char **_getPATH(char **env);
+extern char **environ;
 int getppid(void);
 int maxpid(void);
 int pid(void);
