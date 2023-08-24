@@ -17,10 +17,10 @@ while (1)
     if (read == -1)
     {
         perror("getline");
-        break;
+        _EOF(&command);
     }
-    if (_EOF(&command))
-        break;
+    if (read == 1 && command[0] == '\n')
+        _EOF(&command);
     if (command[read - 1] == '\n')
         command[read - 1] = '\0';
 
