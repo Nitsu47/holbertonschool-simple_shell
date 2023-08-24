@@ -1,6 +1,6 @@
 #include "shell.h"
 /**
-* main - divide an array in tokens(arguments).
+* _strtok - divide an array in tokens(arguments).
 * Return: an array with each argument in the line.
 */
 int _strtok(void)
@@ -70,7 +70,7 @@ while (token != NULL)
 	return (commands);
 }
 /**
-* eof -  function checks if buffer is EOF
+* _EOF - function checks if buffer is EOF.
 * @buffer: The pointer to the input string.
 * Return: Nothing
 **/
