@@ -25,6 +25,10 @@ while (*env)
 	printf("%s\n", *env++);
 }
 }
+/**
+* main - print environment variables in standart output.
+* Return: 0, means that its not an error.
+*/
 int main(void)
 {
 	print_env();
