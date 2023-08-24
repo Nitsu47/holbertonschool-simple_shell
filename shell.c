@@ -9,19 +9,15 @@ char *command = NULL;
 size_t len = 1024;
 ssize_t read;
 
-while (1)
+while (_EOF(&command) == 0)
 {
 printf("$ ");
 fflush(stdout);
 read = getline(&command, &len, stdin);
 if (read == -1)
 {
-if (_EOF(&command))
-{
-break;
-perror("Error");
-break;
-}
+perror("getline");
+continue;
 }
 if (command[read - 1] == '\n')
 command[read - 1] = '\0';
