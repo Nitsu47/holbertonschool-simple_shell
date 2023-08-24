@@ -1,9 +1,10 @@
 #include "shell.h"
 /**
 * _execve - executes commands passed.
+* @args: arguments separated by " " of a command passed.
 * Return: executed command.
 **/
-int execve_(char **args)
+int _execve(char **args)
 {
 pid_t pid;
 int status;
