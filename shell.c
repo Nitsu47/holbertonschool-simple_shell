@@ -16,7 +16,7 @@ fflush(stdout);
 read = getline(&command, &len, stdin);
 if (read == -1)
 {
-if (_EOF(stdin))
+if (_EOF(&command))
 {
 break;
 perror("Error");
@@ -27,8 +27,7 @@ if (command[read - 1] == '\n')
 command[read - 1] = '\0';
 
 printf("%s\n", command);
-
+}
 free(command);
 return (0);
-}
 }
