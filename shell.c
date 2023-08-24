@@ -1,7 +1,10 @@
 #include "shell.h"
 /**
-* main - Shell core
-* Return:
+* exec - Shell core.
+* This function implements the core functionality of the custom shell.
+* Reads input from the user, processes it, and executes the appropriate actions.
+* It also handles end-of-file conditions and provides error messages.
+* Return: Always returns 0 to indicate successful execution.
 */
 int exec(void)
 {
