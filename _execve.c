@@ -3,7 +3,7 @@
 * _execve - executes commands passed.
 * Return: executed command.
 **/
-int execve_(char *command, char **args)
+int execve_(char **args)
 {
 pid_t pid;
 int status;
